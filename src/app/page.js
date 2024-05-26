@@ -3,93 +3,147 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      <main>
+
+          <svg
+              className={styles.logo}
+              width="150"
+              height="150"
+              viewBox="0 0 150 150"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+              <path
+                  d="M1.82927 0C0.818991 0 0 0.818991 0 1.82927V148.171C0 149.181 0.818991 150 1.82927 150H107.927C108.937 150 109.756 149.181 109.756 148.171C109.756 147.16 108.937 146.341 107.927 146.341H3.65854V3.65854H146.341V107.927C146.341 108.937 147.16 109.756 148.171 109.756C149.181 109.756 150 108.937 150 107.927V1.82927C150 0.818991 149.181 0 148.171 0H1.82927Z"
+                  fill="white"
+              />
+              <path
+                  d="M65.2458 57.2195C62.5482 57.2195 60.4824 56.4512 59.0482 54.9146C57.6482 53.378 56.9482 51.2098 56.9482 48.4098V29.1512C56.9482 26.3512 57.6482 24.1829 59.0482 22.6463C60.4824 21.1098 62.5482 20.3415 65.2458 20.3415C67.9433 20.3415 69.9921 21.1098 71.3921 22.6463C72.8263 24.1829 73.5433 26.3512 73.5433 29.1512V32.9415H68.2165V28.7927C68.2165 26.5732 67.2775 25.4634 65.3994 25.4634C63.5214 25.4634 62.5824 26.5732 62.5824 28.7927V48.8195C62.5824 51.0049 63.5214 52.0976 65.3994 52.0976C67.2775 52.0976 68.2165 51.0049 68.2165 48.8195V43.339H73.5433V48.4098C73.5433 51.2098 72.8263 53.378 71.3921 54.9146C69.9921 56.4512 67.9433 57.2195 65.2458 57.2195Z"
+                  fill="white"
+              />
+              <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M85.1582 57.2195C82.3923 57.2195 80.2752 56.4341 78.8069 54.8634C77.3386 53.2927 76.6045 51.0732 76.6045 48.2049V29.3561C76.6045 26.4878 77.3386 24.2683 78.8069 22.6976C80.2752 21.1268 82.3923 20.3415 85.1582 20.3415C87.924 20.3415 90.0411 21.1268 91.5094 22.6976C92.9777 24.2683 93.7118 26.4878 93.7118 29.3561V48.2049C93.7118 51.0732 92.9777 53.2927 91.5094 54.8634C90.0411 56.4341 87.924 57.2195 85.1582 57.2195ZM85.1582 52.0976C87.1045 52.0976 88.0777 50.9195 88.0777 48.5634V28.9976C88.0777 26.6415 87.1045 25.4634 85.1582 25.4634C83.2118 25.4634 82.2386 26.6415 82.2386 28.9976V48.5634C82.2386 50.9195 83.2118 52.0976 85.1582 52.0976Z"
+                  fill="white"
+              />
+              <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M105.666 57.2195C102.9 57.2195 100.783 56.4341 99.3148 54.8634C97.8465 53.2927 97.1123 51.0732 97.1123 48.2049V29.3561C97.1123 26.4878 97.8465 24.2683 99.3148 22.6976C100.783 21.1268 102.9 20.3415 105.666 20.3415C108.432 20.3415 110.549 21.1268 112.017 22.6976C113.485 24.2683 114.22 26.4878 114.22 29.3561V48.2049C114.22 51.0732 113.485 53.2927 112.017 54.8634C110.549 56.4341 108.432 57.2195 105.666 57.2195ZM105.666 52.0976C107.612 52.0976 108.585 50.9195 108.585 48.5634V28.9976C108.585 26.6415 107.612 25.4634 105.666 25.4634C103.72 25.4634 102.746 26.6415 102.746 28.9976V48.5634C102.746 50.9195 103.72 52.0976 105.666 52.0976Z"
+                  fill="white"
+              />
+              <path
+                  d="M118.03 20.8537H123.664V51.5854H132.935V56.7073H118.03V20.8537Z"
+                  fill="white"
+              />
+              <path
+                  d="M104.356 104.473C103.331 104.473 102.461 104.405 101.744 104.268V99.1463C102.29 99.2829 102.905 99.3512 103.588 99.3512C104.714 99.3512 105.551 99.0781 106.097 98.5317C106.644 97.9512 106.917 97.0805 106.917 95.9195V68.4146H112.551V95.7659C112.551 98.7024 111.868 100.888 110.502 102.322C109.171 103.756 107.122 104.473 104.356 104.473Z"
+                  fill="white"
+              />
+              <path
+                  d="M123.904 104.78C121.172 104.78 119.106 104.012 117.706 102.476C116.306 100.905 115.606 98.6683 115.606 95.7659V93.7171H120.933V96.1756C120.933 98.4976 121.906 99.6585 123.853 99.6585C124.809 99.6585 125.526 99.3854 126.004 98.839C126.516 98.2585 126.772 97.3366 126.772 96.0732C126.772 94.5707 126.431 93.2561 125.748 92.1293C125.065 90.9683 123.801 89.5854 121.957 87.9805C119.635 85.9317 118.013 84.0878 117.092 82.4488C116.17 80.7756 115.709 78.8976 115.709 76.8146C115.709 73.9805 116.426 71.7951 117.86 70.2585C119.294 68.6878 121.377 67.9024 124.109 67.9024C126.806 67.9024 128.838 68.6878 130.204 70.2585C131.604 71.7951 132.304 74.0146 132.304 76.9171V78.4024H126.977V76.5585C126.977 75.3293 126.738 74.4415 126.26 73.8951C125.782 73.3146 125.082 73.0244 124.16 73.0244C122.282 73.0244 121.343 74.1683 121.343 76.4561C121.343 77.7537 121.684 78.9659 122.367 80.0927C123.084 81.2195 124.365 82.5854 126.209 84.1902C128.565 86.239 130.187 88.1 131.074 89.7732C131.962 91.4463 132.406 93.4098 132.406 95.6634C132.406 98.6 131.672 100.854 130.204 102.424C128.77 103.995 126.67 104.78 123.904 104.78Z"
+                  fill="white"
+              />
+              <path
+                  d="M148.171 124.39C149.181 124.39 150 125.209 150 126.22V150H126.22C125.209 150 124.39 149.181 124.39 148.171C124.39 147.16 125.209 146.341 126.22 146.341H146.341V126.22C146.341 125.209 147.16 124.39 148.171 124.39Z"
+                  fill="white"
+              />
+          </svg>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+          <div className={styles.figuresTopLeft}>
+              <img className={styles.stripedTriangle} src="/stripedTriangle.png"/>
+              <img className={styles.stripedCircle} src="/stripedCircle.png"/>
+              <svg
+                  className={styles.rect}
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+              >
+                  <rect width="25" height="25" rx="2" fill="white"/>
+              </svg>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+              <svg
+                  className={styles.cross}
+                  width="34"
+                  height="34"
+                  viewBox="0 0 34 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+              >
+                  <path
+                      d="M5 17H29M17 29V5"
+                      stroke="white"
+                      strokeWidth="10"
+                      strokeLinecap="round"
+                  />
+              </svg>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+              <svg
+                  className={styles.triangle}
+                  width="24"
+                  height="21"
+                  viewBox="0 0 24 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+              >
+                  <path
+                      d="M10.268 1.5C11.0378 0.166665 12.9623 0.166667 13.7321 1.5L23.2583 18C24.0281 19.3333 23.0659 21 21.5263 21H2.47372C0.934118 21 -0.0281308 19.3333 0.74167 18L10.268 1.5Z"
+                      fill="white"
+                  />
+              </svg>
+          </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+          <div className={styles.figuresBottomRight}>
+              <img className={styles.stripedRectangle} src="/stripedRectangle.png"/>
+              <img className={styles.stripedTriangle} src="/stripedTriangle.png"/>
+              <svg className={styles.circle} width="31" height="31" viewBox="0 0 31 31" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15.5082" cy="15.9096" r="15" transform="rotate(143.404 15.5082 15.9096)" fill="white"/>
+              </svg>
+              <svg
+                  className={styles.cross}
+                  width="34"
+                  height="34"
+                  viewBox="0 0 34 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+              >
+                  <path
+                      d="M5 17H29M17 29V5"
+                      stroke="white"
+                      strokeWidth="10"
+                      strokeLinecap="round"
+                  />
+              </svg>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+              <svg
+                  className={styles.triangle}
+                  width="24"
+                  height="21"
+                  viewBox="0 0 24 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+              >
+                  <path
+                      d="M10.268 1.5C11.0378 0.166665 12.9623 0.166667 13.7321 1.5L23.2583 18C24.0281 19.3333 23.0659 21 21.5263 21H2.47372C0.934118 21 -0.0281308 19.3333 0.74167 18L10.268 1.5Z"
+                      fill="white"
+                  />
+              </svg>
+
+          </div>
+          <img className={styles.logoSCC} src={'/logoSCC.png'}/>
+
+              <canvas id="waveBottom" className={styles.canvasLeftBottom}>
+                  Sorry, your browser does not support canvas.
+              </canvas>
+
+              <canvas id="waveTop" className={styles.canvasRightTop}>
+                  Sorry, your browser does not support canvas.
+              </canvas>
+          <script type="text/javascript" src="/static/waves.js"/>
+      </main>
   );
 }
