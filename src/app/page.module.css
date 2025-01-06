@@ -111,13 +111,13 @@
 .canvasLeftBottom {
   position: absolute;
   left: -45%;
-  bottom: -90%;
+  bottom: -110%;
   rotate: 35deg;
 }
 
 .canvasRightTop {
   position: absolute;
   right: -50%;
-  top: -80%;
+  top: -110%;
   rotate: -145deg;
 }
